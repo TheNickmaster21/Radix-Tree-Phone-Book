@@ -21,7 +21,7 @@ public class PhoneBook {
         while (line != null) {
             String[] lineSplit = line.split(",");
             String name = lineSplit[0];
-            Long number =  Long.parseLong (lineSplit[1]);
+            Long number = Long.parseLong(lineSplit[1]);
             System.out.println(name + ' ' + number);
             tree.insert(name, number);
             line = reader.readLine();

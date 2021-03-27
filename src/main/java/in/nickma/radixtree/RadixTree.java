@@ -65,7 +65,7 @@ public class RadixTree<T> {
                 BranchRadixNode<T> newBranch = new BranchRadixNode<>();
                 newBranch.putEdge(key.substring(matchingCharacters, key.length() - 1), node);
                 newBranch.putEdge(term.substring(matchingCharacters), new LeafRadixNode<>(value));
-                branch.putEdge(key.substring(0, matchingCharacters ), newBranch);
+                branch.putEdge(key.substring(0, matchingCharacters), newBranch);
             }
         } else {
             // No Matches, add new edge
